@@ -2,8 +2,7 @@ migrate:
 	docker compose exec app python src/manage.py migrate $(if $m, api $m,)
 
 makemigrations:
-	docker compose exec app python src/manage.py makemigrations
-	docker compose exec app sudo chown -R ${USER} src/app/migrations/
+	python src/manage.py makemigrations
 
 createsuperuser:
 	docker compose exec app python src/manage.py createsuperuser

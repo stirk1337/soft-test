@@ -10,6 +10,7 @@ COPY Pipfile.lock .
 
 RUN  pip install pipenv \
     && pipenv requirements > requirements.txt \
+    && apt-get -y update && apt-get -y install curl \
     && pip install -r requirements.txt
 
 COPY . .

@@ -10,6 +10,9 @@ django = "4.0"
 django-environ = "0.8"
 python-dotenv = "1.0.1"
 psycopg2-binary = "2.9.9"
+ruff = "0.3.2"
+aiohttp = "3.9.4rc0"
+lxmlsoup = "1.5.2"
 
 [requires]
 python_version = "3.11"
